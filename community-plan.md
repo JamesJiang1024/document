@@ -6,11 +6,11 @@
 
 ##### API Patchs
 
-hook.py DBHook RPCHook[E]
+hook.py DBHook RPCHook[E] [In Review]
 
 middleware.py Does not make sence and easy to understood[M]
 
-v1/__init__.py Become more nodes[E]
+v1/__init__.py Become more nodes[E] [In Review]
 
 controller/root.py Change Controller Message[E]
 
