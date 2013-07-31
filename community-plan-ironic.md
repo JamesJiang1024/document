@@ -35,9 +35,3 @@ v1/port.py patch rpc[M] if delete
 ##### API Tests 
 
 #### PXE Deploy
-
-
-
-### Heat
-
-
