@@ -1,0 +1,21 @@
+* BM_DRIVER
+  ** PXE
+  ** TILERA
+* BM_POWER_MANAGER
+  ** iPMI
+  ** TILERA
+* BM_POSEUR_EXTRA_OPTS
+  ** BM_POSEUR_EXTRA_OPTS
+  ** bridge br99 --bridge-ip 192.0.2.1
+* NETWORK
+  ** BM_DNSMASQ_IFACE eth0
+  ** BM_DNSMASQ_RANGE
+  ** BM_FIRST_MAC (what's it)
+* IPMI
+  ** BM_PM_ADDR
+  ** BM_PM_USER
+  ** BM_PM_PASS
+* IMAGE
+  ** BM_IMAGE
+
+FLAT_NETWORK_BRIDGE

@@ -1,0 +1,13 @@
+* Baremetal
+  ** TODO Deploy Baremetal Function
+  ** Reading Ironic Code
+  ** Reading disk-image Code
+
+* Articles
+  ** TODO Ironic and TripleO 
+  ** TODO About Life
+* Marketplace
+  ** TODO Fix Bugs
+  ** Implement Policy 
+* Foreman HA
+  ** TODO Env

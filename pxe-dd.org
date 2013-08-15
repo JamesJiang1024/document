@@ -1,0 +1,42 @@
+PXE driver should mount target iscsi volume and "dd" image
+
+nova-baremetal 2 process
+
+nova-compute
+nova-baremetal-deploy-helper -> PXE driver
+
+old flow
+1. pxe driver prepares tftp bootloader [pxelinux]
+2. ipmi driver powers on machine [ipmi]
+3. pxe driver goes into a polling loop, watching the state in the DB, waiting for deploy to finish [install]
+4. baremetal-deploy-helper gets iSCSI into from node, sets node state to "DEPLOYING" 
+5. baremetal-deploy-helper connects to iSCSI endpoint, partitions volume, dd's the image onto it updates tftp config
+6. baremetal-deploy-helper asks the machine to restart 
+7. pxe driver notices the state change, does final tasks and finishes.
+
+new flow
+1. pxe driver prepares tftp bootloader[same]
+2 .ipmi diver powers on machine[same]
+3. pxe driver waits for connects, gets iSCSI info from node
+4. dd images
+5. ipmi restart machine
+
+
+a question about this bp
+
+nova-baremetal sends a simple ping to the deploy-helper on port 10000 to start the deploy process.
+
+Will ironic listen on port 10000 for this ping or will we create a Ironic-deploy ram-disk that can talk directly to the ironic api?
+
+along these lines, the nova-baremetal process currently sends a simple ping back to the node to indicate the deployment is done. Will this still be the case or will the Ironic depoly have another way of detecting the deploy is done, polling the api? Do we care that the node knows the deployment is done? are there services that need to be shutdown on the node breore it is rebooted or can it just be power cycled. 
+
+deploy ramdisk should not talk to ironics' public api, networking and security issues.
+
+current code
+is what?
+
+As far as what happens when dd is complete? I believe we should allow the baremetal node to gracefully stop services(ISCSI) as it does today. 
+
+stop iscsi target
+notice ironic
+reboot
