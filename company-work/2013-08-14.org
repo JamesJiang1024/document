@@ -1,8 +1,7 @@
 * Baremetal
   ** TODO Deploy Baremetal Function
-  ** Reading Ironic Code
+  ** Reading Nova Baremetal Code
   ** Reading disk-image Code
-
 * Articles
   ** TODO Ironic and TripleO 
   ** TODO About Life
@@ -10,4 +9,4 @@
   ** TODO Fix Bugs
   ** Implement Policy 
 * Foreman HA
-  ** TODO Env
+  ** TODO 1 Env
