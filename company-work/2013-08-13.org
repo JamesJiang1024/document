@@ -1,7 +1,0 @@
-* Baremetal
-  ** Reading Ironic Code
-  ** Reading disk-image Code
-* Marketplace
-  ** Implement Policy 
-* Foreman HA
-  ** Env

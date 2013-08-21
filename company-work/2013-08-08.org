@@ -1,7 +1,0 @@
-* Cloud Init
-** Cloud Init init
-** Cloud Get DataSource
-** Cloud Set Current Instance
-** Cloud Store MetaData
-** Cloud Run CC Modules
-*** CC to load cloud-config(buildin cfg)

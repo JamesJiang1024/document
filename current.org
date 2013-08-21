@@ -1,0 +1,50 @@
+Project Management
+===============================================================================
+* ProjectX
+  :DEADLINE: <2013-09-01 Sun>
+** Mimic Parameter
+*** DONE Mimic Parameter Dev
+*** TODO Mimic Parameter Bug Fix
+*** TODO Mimic Parameter Testing 
+*** DONE Mimic Parameter Env Build[Current]
+ :DEADLINE: <2013-08-21 Wed>
+** Mimic HA
+*** DONE Mimic HA Env Build[Current]
+*** TODO Mimic HA Develop
+*** TODO Mimic Bug Fix
+*** TODO Mimic HA Testing
+
+* Personal Tools
+** Proxy On Public
+** Personal Route At 402
+** Desktop Xmonad In Workspace
+** Terminal On Public World With Password
+** Personal Time Management
+** Personal Knowledge Center
+*** Search Everything Of Myself
+** Personal Communication Center
+** Personal Config Management
+** Vim Improvement
+
+* Personal Relationship
+** Write a letter to RuiSuDan
+** Chat with liang
+** Participate The English Corner
+
+* Personal Interests
+** Linux Kernel
+** Openstack Ironic
+** Small Hardware
+
+* Personal Health
+** Stomath 200 
+** Backside 100 
+===============================================================================
+
+Current
+===============================================================================
+*** TODO Mimic Parameter Env Build
+    :LOGBOOK:
+    :CLOCK: [2013-08-21 Wed 15:12]--[2013-08-21 Wed 17:27] -> 2:15
+    :END:
+*** TODO Mimic HA Env Build
