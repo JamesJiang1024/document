@@ -5,6 +5,8 @@ Project Management
 ** Mimic Parameter
 *** DONE Mimic Parameter Dev
 *** TODO Mimic Parameter Bug Fix
+*** DONE Mimic Parameter Id Related(1) 
+   Ceilometer 的 Endpoint： http://117.121.25.47:8777
 *** TODO Mimic Parameter Testing 
 *** DONE Mimic Parameter Env Build[Current]
  :DEADLINE: <2013-08-21 Wed>
@@ -13,6 +15,7 @@ Project Management
 *** TODO Mimic HA Develop
 *** TODO Mimic Bug Fix
 *** TODO Mimic HA Testing
+
 
 * Personal Tools
 ** Proxy On Public
@@ -44,7 +47,4 @@ Project Management
 Current
 ===============================================================================
 *** TODO Mimic Parameter Env Build
-    :LOGBOOK:
-    :CLOCK: [2013-08-21 Wed 15:12]--[2013-08-21 Wed 17:27] -> 2:15
-    :END:
 *** TODO Mimic HA Env Build
