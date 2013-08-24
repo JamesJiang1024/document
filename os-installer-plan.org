@@ -1,8 +1,0 @@
-* Mimic Smart Parameters Support (deadline 8/20 morning)
-  ** TODO Design Smart Parameters Architecture  
-  ** TODO Implement Smart Parameters Support
-* Mimic Foreman HA When Modify 
-  ** TODO Build Foreman 3 Machine Env (deadline 8/21 morning)
-  ** TODO Modify Mimic Post To Foreman (deadline 8/22 morning) 
-  ** TODO Foreman DB Sync Daemon Of TFTP And DHCP With HA Test(deadline 8/25 
-  morning)

@@ -1,0 +1,70 @@
+** Ceph
+*** Deploy Ceph
+  安装方法：
+   $cd /opt/
+   $git clone https://github.com/zhurongze/devceph.git
+   $cd devceph
+   $./devceph.sh install
+   $./devceph.sh start
+   $ceph -s
+
+*** Use Ceph As a Client
+   git clone https://github.com/zhurongze/devceph
+
+   CEPH_USER，CEPH_POOL，CEPH_CONF。在devceph.sh脚本部署的Ceph环境中：
+   CEPH_USER = admin
+   CEPH_POOL = data   #或者使用你新建pool的名字
+   CEPH_CONF = /etc/ceph/ceph.conf
+
+   使用方法：
+   1、使用devceph.sh脚本在A主机上部署Ceph。
+   2、在B主机上安装python-rados库。
+
+       echo "### Install Release Key"
+       wget -q -O- 'https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc' | sudo apt-key add -
+    
+       echo "### Add Release Packages"
+       echo deb http://ceph.com/debian-dumpling/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+
+
+       echo "### Install Ceph Packages"
+       sudo apt-get update && sudo apt-get install ceph  -y
+
+   3、从A主机上拷贝/etc/ceph目录下的 ceph.client.admin.keyring 和 ceph.conf 文件到 B主机的 /etc/ceph 目录下，并保证这两个文件的权限是 0644 。
+   4、在B主机上执行 #ceph -s 命令，看返回结果是否和A主机一致。
+
+*** Ceph Usage
+   创建一个新的pool:
+   $ceph osd pool create testpool 96 96
+   上传文件到testpool中:
+   $rados --pool=testpool put education.avi mm.avi
+   查看系统容量：
+   $ rados --pool=testpool ls
+   帮助信息：
+   $ceph --help        #ceph 集群的命令
+   $rados --help       #rados对象存储的命令
+   $rbd  --help         #rbd块设备存储的命令
+*** Python Radios
+   >>> import rados
+   >>> cc = rados.Rados(rados_id='admin', conffile='/etc/ceph/ceph.conf')
+   >>> cc.connect()
+   >>> cc.list_pools()
+   ['data', 'metadata', 'rbd', 'testpool']
+   >>> ioctx = cc.open_ioctx('testpool')
+   >>> object_names = [obj.key for obj in ioctx.list_objects()]
+   >>> print object_names
+   ['education.avi']
+   >>>
+
+
+
+*** DONE Mimic HA Env Build[Current]
+*** DONE Mimic HA Develop
+*** TODO Mimic Bug Fix
+*** TODO Mimic HA Testing
+
+===============================================================================
+
+Routine
+===============================================================================
+

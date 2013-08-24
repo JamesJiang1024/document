@@ -1,0 +1,10 @@
+* DevOps Provision Controller
+** Mimic
+*** Tasks
+**** DONE Mimic Parameter Dev
+**** DONE Mimic Parameter Id Related(1) 
+**** DONE Mimic Parameter Env Build[Current]
+** Foreman
+** TFTP
+** DHCP
+** PXELinux

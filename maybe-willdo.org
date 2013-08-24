@@ -1,0 +1,21 @@
+* My Project
+** BoneDragon
+*** localhost - - [23/Aug/2013 10:35:37] "POST /v1/nodes HTTP/1.1" 500 161
+    delete session DepOpt
+
+* Personal Interests
+** Linux Kernel
+** Openstack Ironic
+** Small Hardware
+
+* Personal Tools
+** Proxy On Public
+** Personal Route At 402
+** Desktop Xmonad In Workspace
+** Terminal On Public World With Password
+** Personal Time Management
+** Personal Knowledge Center
+*** Search Everything Of Myself
+** Personal Communication Center
+** Personal Config Management
+** Vim Improvement
