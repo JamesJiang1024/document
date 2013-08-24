@@ -1,0 +1,41 @@
+* VIM
+** Vim Add-On-Manager
+*** Manage Addon 
+**** InstallAddons {name} ...
+    从网络安装指定的插件。 通常情况下，应该使用ActivateAddons 命令直接激活。
+    只有在需要了解插件包含的文件列表时才使用这个命令先安装，后激活。
+**** ActivateAddons {name} ...
+    激活指定的插件。 如果插件没有安装，则先从网络下载安装，然后激活。
+**** ActivateInstalledAddons {name} ...
+    激活指定的插件 指定的插件已经被安装，但没有激活。这个命令和ActivateAddons 命令的区别仅在于只补全已经安装的插件。
+    先安装一个最常用的插件taglist 和 a.vim
+**** Test taglist
+    :UpdateAddons taglist
+    :UninstallNotLoadedAddons taglist
+**** Self Define Plugin
+    凡是在 vim-addon-manager-known-repositories 中注册过的vim plugin 都可以直接使用
+    https://github.com/MarcWeber/vim-addon-manager-known-repositories
+    let g:vim_addon_manager['plugin_sources']['vimim'] = {"type":"svn", "url":"http://vimim.googlecode.com/svn/trunk"}
+    同时把"vimim" 加入到 call vam#ActivateAddons() 的参数列表中即可。
+** Plant-UML
+*** Links
+   [[https://github.com/aklt/plantuml-syntax|github]]
+   [[http://plantuml.sourceforge.net/|官网]]
+   [[http://plantuml.sourceforge.net/index.html]]
+*** Prepare
+   vim with vam-addon
+   sudo apt-get install graphviz
+
+*** Action
+**** vim ~/.vim/vam.vim
+**** add plugin named plantuml-syntax
+**** restart vim
+**** wget http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
+**** mkdir -p $HOME/lib/java/
+**** cp download $HOME/lib/java/plantuml.jar
+**** touch /usr/local/bin/plantuml
+**** chmod 777 /usr/local/bin/plantuml
+**** echo "#!/bin/bash\njava -jar $HOME/lib/java/plantuml.jar -tsvg $@"
+**** vim *.uml
+**** :make
+**** show *.svg in image-view

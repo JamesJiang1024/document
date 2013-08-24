@@ -5,9 +5,13 @@ Project Management
 ** Mimic Parameter
 *** TODO Mimic Parameter Bug Fix
 *** TODO Mimic Parameter Testing 
-   Ceilometer 的 Endpoint： http://117.121.25.47:8777
+*** TODO Test Ceilometer Endpoint： http://117.121.25.47:8777
 ** Mimic HA
+
+** Push Openstack Deploy Auto
 
 * Relationships
   :DEADLINE: <2013-08-24 Sat>
 ** Write a letter to RuiSuDan
+*** 
+*** 我很珍视我们四年的友谊
