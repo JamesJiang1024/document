@@ -1,0 +1,8 @@
+* DNS
+** Base Concept http://linux.vbird.org/linux_server/0350dns.php
+** Wikipedia http://zh.wikipedia.org/wiki/Dns 
+** Contcept
+  FQDN, DNS, etc/hosts
+  Ip 查询流程
+  授权领域查询
+

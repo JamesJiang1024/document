@@ -2,39 +2,26 @@ Project Management
 ===============================================================================
 * ProjectX
   :DEADLINE: <2013-09-05 Thu>
-** Mimic Parameter
-*** TODO Mimic Parameter Bug Fix
-*** TODO Mimic Parameter Testing 
-*** TODO Test Ceilometer Endpoint： http://117.121.25.47:8777
-** Mimic HA
-** Push Openstack Deploy Auto
-*** PXE De
-* Problem When Bug Fix
-** 8/24 连条问题
-*** Puppet::Config Modules 问题
-    最新的Puppet Patch中有一些bug，XingChao正在Fix中  
-*** 数据库中有多个同名参数无法分别，xinchao把所有puppet参数改为唯一标识
-    这次修改导致了多次调试，每次调试20min
-*** 需要手工输入执行Openstack的参数，前端需要调我的接口来创建Openstack
-** 8/25 连条问题
-*** Horizon会把foreman前端覆盖。
-*** 主机的NameServer问题
-*** 传参数问题，列表需要hack数据库。
-** DONE Write a letter to RuiSuDan 
-*** 我很珍视我们四年的友谊
-*** 一直回忆起当年一起复习的日子。
-*** 一转眼我们已经各奔前程不知到什么时候能够相聚。
-*** 知道你喜欢听音乐，给你寄去一个好音质的mp3，里面的音效我已经调试过了，放了一些你应该喜欢听的音乐，有很多音乐是当时大一大二时候的回忆。
-*** 为什么选择纯音乐的MP3, 有时候我们会想要进入人群来忘记烦恼，但是如果我们需要成长Balabala
-*** 我知道你自己的身体有时候也不太好，希望你能多运动，健康生活，所以这个mp3带了运动的功能，可以记录你走过的距离，这样你就可以一边跑步一边听歌了
-*** 我会写一些文章和一些思考，暂时只给好友看，让大家在思想上一起进步
-* Healthy life
-** Running  [[http://bbs.runbible.cn/thread-703-1-1.html]]
-** Sleeping [[http://health.sohu.com/20130220/n366512943.shtml]]
-** Eatting 
-* Tools Condition 
-** Org-mode不是终点，这是一个中间过程，是一个知识组织的一个方式。
-** 人类的记忆是基于图形的，图形化的记忆更为重要。
-** 最终可以用思维导图来解决，思维导图必须一直存在于大脑。
-** 柔性思考需要考虑人的成分，博客不要用org-mode直接去管理。
-** TODO 做一个定时器，假设做一件事我所需要的时间，到点切断。
+* Sqlalchemy
+** document http://docs.sqlalchemy.org/en/rel_0_7/
+
+* DNS
+** Base Concept http://linux.vbird.org/linux_server/0350dns.php
+** Wikipedia http://zh.wikipedia.org/wiki/Dns 
+** Contcept
+  FQDN, DNS, etc/hosts
+  Ip 查询流程
+  授权领域查询
+
+* Scapy
+** TODO http://ikimi.net/?p=173
+** http://www.secdev.org/projects/scapy/doc/usage.html#etherleaking
+
+* Ruby
+** RVM https://rvm.io/rvm/install
+   install rvm: curl -L https://get.rvm.io | bash
+   umask u=rwx,g=rwx,o=rx
+   source /etc/profile.d/rvm.sh
+
+** Jruby
+   rvm install jruby
