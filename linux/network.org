@@ -1,8 +1,12 @@
-* DNS
-** Base Concept http://linux.vbird.org/linux_server/0350dns.php
-** Wikipedia http://zh.wikipedia.org/wiki/Dns 
-** Contcept
+* 网络协议 http://www.ietf.org/
+** DHCP http://www.rfc-editor.org/rfc/rfc2616.txt
+** DNS
+*** Base Concept http://linux.vbird.org/linux_server/0350dns.php
+*** Wikipedia http://zh.wikipedia.org/wiki/Dns 
+*** Contcept
   FQDN, DNS, etc/hosts
   Ip 查询流程
   授权领域查询
-
+** Scapy
+*** TODO http://ikimi.net/?p=173
+*** http://www.secdev.org/projects/scapy/doc/usage.html#etherleaking

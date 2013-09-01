@@ -2,73 +2,50 @@ Project Management
 ===============================================================================
 * ProjectX
   :DEADLINE: <2013-09-05 Thu>
-* Sqlalchemy
-** document http://docs.sqlalchemy.org/en/rel_0_7/
 
-* DNS
-** Base Concept http://linux.vbird.org/linux_server/0350dns.php
-** Wikipedia http://zh.wikipedia.org/wiki/Dns 
-** Contcept
-  FQDN, DNS, etc/hosts
-  Ip 查询流程
-  授权领域查询
+* Community Common
+  Yuriy.. looking really good just a few indentation issues.
+  ditto
 
-* Scapy
-** TODO http://ikimi.net/?p=173
-** http://www.secdev.org/projects/scapy/doc/usage.html#etherleaking
+* 08-29
+** DONE Finish Network Codding 
+** Finish Test uOS
+*** DONE Morning Support For Kun Modify
+*** TODO Support For ZhengMei
+**** DONE GOT Token 
+**** TODO 最终因为前端的Proxy
+** Problems
+*** S99local
+*** Ceph Not Found
+*** 开机Sage问题
+**** DONE 光盘eject
+*** 装完以后部署上的问题
+**** DONE 缺少vim
+**** DONE repo的设置有问题
+*** Puppet 模块没有执行正确
+**** DONE HostName 问题
+* 08-30
+** Solve Problems When First Machine
+*** Mimic和Placepo结合问题
+**** TODO tftp_servername
+**** 没有手动设置gateway和master_ip
+**** Mimic不是最新版本
+**** 刚开始必须部署dhcp否则会导致第一台机器加不上去
+**** 解决没有安装Storm
+*** Node 问题
+*** 打通1.5到中关村环境
+*** 新机器ks的时候需要老的install.img
+** Finish Test Razor
 
-* Ruby
-** RVM https://rvm.io/rvm/install
-   install rvm: curl -L https://get.rvm.io | bash
-   umask u=rwx,g=rwx,o=rx
-   source /etc/profile.d/rvm.sh
+* 观点积累
+  跟懂OpenStack的互联网公司合作比较顺利和痛快，他们识货，因此我们继续保持对互联网公司的OpenStack支持；
+  部分互联网公司其实没有多少资源投入到基础研究领域，他们的很大的压力，要短、平、快地上线，推广，不是很有耐心做长期在基础领域长期投入。因此，我们需要增强我们在一些基础领域的实力，并且长线投入，进一步，还将这些投入变成产品，以持续保持对互联网公司在某些领域的优势；
+  坚持可持续发展之路，当别人都不重视这个的时候，我们很在乎，这就是一个巨大的差异化，会随着时间积累成我们的实力。
+  我们需要持续地对公司输出技术、价值观，在你见客户之前，别人已经很了解你，并且曾经从你这里学到过东西，这时再谈合作和生意，几乎是轻而易举的事情。
 
-** Jruby
-   rvm install jruby
+* 问题积累
+  了解普华
+  了解杜玉杰
 
-* Hope ui need
-** ip (host['ip'])
-** server uuid (host['name'])
-** type (host['hostgroup_id'])
-
- Extend 
-** name 
-   "host_parameters": [
-            {
-                "host_parameter": {
-                    "value": "abc",
-                    "name": "name"
-                }
-            }
-   ],
-** internel dns(cluster_name, host_name)
-
- Facts
-** vendor (finish)[manufacturer]
-** model (finish)[productname]
-** cpu (finish)[processor0]
-** cpu cores(finish)[processorcount]
-** memory(finish)[memorytotal][memoryfree]
-** disk[RongZe]
-** healthy[HaoMai]
-** status
-** interface speed
-** interface in use
-** launch time (finish)[launch_time]
-** uptime (finish)[uptime_seconds]
-** Foreman A
-   http://192.168.10.2:3000/api/hosts
-   http://192.168.10.2:3000/api/hosts/us1.ustack.in/facts?per_page=1000
- 
- * 8/28 工作
-*** 调研网络探测scapy
-*** 调研并写foreman facts
-*** 连条产品，修改多个repo参数，修改puppet脚本
-**** 发现问题，repo没有成功复制过去, 明天询问HK
- * 美化桌面
-*** Conky ubuntu桌面监控系统
-    sudo apt-get install conky-all
-    sudo apt-get install conky curl lm-sensors hddtemp
-
- * 网络协议 http://www.ietf.org/
-   DHCP http://www.rfc-editor.org/rfc/rfc2616.txt
+* 人性的几个弱点
+  着急，贪婪，色欲，偷窥，虚荣

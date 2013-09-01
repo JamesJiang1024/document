@@ -1,0 +1,38 @@
+* 8/28 工作
+*** 调研网络探测scapy
+*** 调研并写foreman facts
+*** 连条产品，修改多个repo参数，修改puppet脚本
+**** 发现问题，repo没有成功复制过去, 明天询问HK
+** Hope ui need
+*** ip (host['ip'])
+*** server uuid (host['name'])
+** type (host['hostgroup_id'])
+ Extend 
+** name 
+   "host_parameters": [
+            {
+                "host_parameter": {
+                    "value": "abc",
+                    "name": "name"
+                }
+            }
+   ],
+** internel dns(cluster_name, host_name)
+
+ Facts
+*** vendor (finish)[manufacturer]
+*** model (finish)[productname]
+*** cpu (finish)[processor0]
+*** cpu cores(finish)[processorcount]
+*** memory(finish)[memorytotal][memoryfree]
+*** disk[RongZe]
+*** healthy[HaoMai]
+*** status
+*** interface speed
+*** interface in use
+*** launch time (finish)[launch_time]
+*** uptime (finish)[uptime_seconds]
+*** Foreman A
+   http://192.168.10.2:3000/api/hosts
+   http://192.168.10.2:3000/api/hosts/us1.ustack.in/facts?per_page=1000
+ 

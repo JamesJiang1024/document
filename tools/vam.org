@@ -39,3 +39,7 @@
 **** vim *.uml
 **** :make
 **** show *.svg in image-view
+* Ubuntu Design
+** Conky ubuntu桌面监控系统
+   sudo apt-get install conky-all
+   sudo apt-get install conky curl lm-sensors hddtemp

@@ -1,0 +1,11 @@
+* Python
+** Sqlalchemy
+*** document http://docs.sqlalchemy.org/en/rel_0_7/
+
+* Ruby
+** RVM https://rvm.io/rvm/install
+   install rvm: curl -L https://get.rvm.io | bash
+   umask u=rwx,g=rwx,o=rx
+   source /etc/profile.d/rvm.sh
+** Jruby
+   rvm install jruby
