@@ -19,6 +19,10 @@
 **** 如何清理puppet的hosts文件
     service httpd start
     service httpd stop
-    puppetca clean --all
-    rm /var/lib/pupppet/ssl -rf
+    puppetca clean --all(master)
+    rm /var/lib/pupppet/ssl -rf (client)
     /etc/init.d/puppetmaster start &&  /etc/init.d/puppetmaster stop 
+** PXE
+*** IPXE
+**** Burn Into Rom http://www.ipxe.org/howto/romburning
+**** Boot From IPXE http://www.ipxe.org/howto/chainloading 

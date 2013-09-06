@@ -35,4 +35,29 @@
 *** Foreman A
    http://192.168.10.2:3000/api/hosts
    http://192.168.10.2:3000/api/hosts/us1.ustack.in/facts?per_page=1000
- 
+
+* 08-29
+** DONE Finish Network Codding 
+** Finish Test uOS
+*** DONE Morning Support For Kun Modify
+*** DONE Support For ZhengMei
+**** DONE GOT Token 
+**** DONE 最终因为前端的Proxy
+** Problems
+*** S99local
+*** Ceph Not Found
+*** 开机Sage问题
+**** DONE 光盘eject
+*** 装完以后部署上的问题
+**** DONE 缺少vim
+**** DONE repo的设置有问题
+*** Puppet 模块没有执行正确
+**** DONE HostName 问题
+* 08-30
+** Solve Problems When First Machine
+*** Mimic和Placepo结合问题
+**** DONE tftp_servername
+**** DONE 没有手动设置gateway和master_ip
+**** DONE Mimic不是最新版本
+**** DONE 解决没有安装Storm
+*** DONE 打通1.5到中关村环境

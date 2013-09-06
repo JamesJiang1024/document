@@ -1,13 +1,9 @@
-* Foreman
-** Build Default PXE
-** Modify PXELinux AND Kickstart
-** Install Media Modify 
-** Modify Internel Ks
-** V1-V1.0
+* Provision
+** TODO Build Default PXE
+** TODO Finish Test Razor
+** TODO 刚开始必须部署dhcp否则会导致第一台机器加不上去
+** TODO 新机器ks的时候需要老的install.img
 
-* ProjectX
-** Check DHCP Start DHCP Start Storm
-** Push XinChao Mimic Repack
-** Sql Replay 
-** Ks Replay
-** Nginx Modify
+* Vision
+** TODO 了解普华
+** TODO 了解杜玉杰
