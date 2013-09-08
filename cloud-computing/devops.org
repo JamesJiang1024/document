@@ -7,7 +7,7 @@
 **** DONE Forman传列表参数，需要按照yaml传。 
 *** Problems
 **** TODO Horizon会把foreman前端覆盖问题根源。
-**** TODO 主机Nameserver有问题，需要弄明白Dns。
+DONE 主机Nameserver有问题，需要弄明白Dns。
 **** TODO Puppet::Config Modules 问题, 需要理解Puppet。
 **** TODO 需要探索Foreman如何根据environment class来传递参数
 **** TODO Test Ceilometer Endpoint： http://117.121.25.47:8777

@@ -10,3 +10,14 @@
 ** Scapy
 *** TODO http://ikimi.net/?p=173
 *** http://www.secdev.org/projects/scapy/doc/usage.html#etherleaking
+
+* Linux Network Namespace
+** Create and manage linux network namespace
+*** ip netns add [name]
+*** ip netns list
+** Create peer interface
+*** ip link add veth0 type veth peer name veth1
+** Assign interface to a namespace
+*** ip link set veth1 netns blue
+** Get into a namespace
+*** ip netns exec bash

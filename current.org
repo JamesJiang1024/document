@@ -5,13 +5,34 @@ Project Management
 ** @闻天 servers前后端对接 周五完成
 ** @闻天 @兴超 @黄昆 @胥昕 多台机器联调，下周二完成
 
-* 9/3
+* 9/7 Weekend
 ** Problems
-*** DONE 把第二台机器的问题解决
-*** TODO 和前端连条 
-**** 把物理机的api给前端
-**** 前端把OS Install的东西给调通
-*** TODO 规划初始化信息
-**** HK生成的文件中我可以获取, subnet, gateway, netmask
-**** 需要自己解决master_ip和dhcp_range
-**** foreman初始化信息中需要subnet的信息
+
+*** DONE 规划初始化信息 [1h]
+**** DONE HK生成的文件中我可以获取, subnet, gateway, netmask, master(在get请求的时候直接获取)
+***** DONE 需要迁移创建机器Node, POST中的逻辑
+*** TODO 自动生成DNS记录
+*** TODO 自动生成uuid
+ 
+* DHCP
+** Status
+   DHCPDISCOVER | DHCPREQUEST | DHCPACK | DHCPNAK
+** ProcessClient Send a DHCPDISCOVER, Server allocate a new address.
+*** First look at dhcp leases, can not be reassigned. 
+*** Check the client is permitted to use this.
+**** If client is no logger uss it, lease will be free.
+*** Lease is not found, server will find a lease that client permitted to have 
+    provide to it.
+*** No address is found, no response to client.
+*** Lease is found, but has give to another machine, it will still looking for 
+    another one.
+** How DHCP Prevent Confict
+*** Check IP Address in use, ICMP Echo request to ip addr being allocated.
+**** icmp not reply 1 sec, ip is free.
+**** reply abandon the ip. 
+**** If there is no available address, dhcp will attemp to reclaim an abandon ip. Mark free, ICMP echo request check, no replay assign. 
+** TODO DHCP Failover
+** TODO DHCP Classes
+* Ironic 中需要修改的地方
+** driver/base.py 的TODO文案 [1h]
+** node delete rpc 
