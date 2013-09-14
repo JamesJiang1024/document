@@ -21,3 +21,24 @@
 *** ip link set veth1 netns blue
 ** Get into a namespace
 *** ip netns exec bash
+
+* DHCP
+** Status
+   DHCPDISCOVER | DHCPREQUEST | DHCPACK | DHCPNAK
+** ProcessClient Send a DHCPDISCOVER, Server allocate a new address.
+*** First look at dhcp leases, can not be reassigned. 
+*** Check the client is permitted to use this.
+**** If client is no logger uss it, lease will be free.
+*** Lease is not found, server will find a lease that client permitted to have 
+    provide to it.
+*** No address is found, no response to client.
+*** Lease is found, but has give to another machine, it will still looking for 
+    another one.
+** How DHCP Prevent Confict
+*** Check IP Address in use, ICMP Echo request to ip addr being allocated.
+**** icmp not reply 1 sec, ip is free.
+**** reply abandon the ip. 
+**** If there is no available address, dhcp will attemp to reclaim an abandon ip. Mark free, ICMP echo request check, no replay assign. 
+** TODO DHCP Failover
+** TODO DHCP Classes
+*
