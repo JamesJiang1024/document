@@ -36,3 +36,7 @@ Project Management
 * Ironic 中需要修改的地方
 ** driver/base.py 的TODO文案 [1h]
 ** node delete rpc 
+
+
+   1. master_ip
+   2. 所有参数
