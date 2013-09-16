@@ -15,3 +15,19 @@ Project Management
 * Ironic 中需要修改的地方
 ** driver/base.py 的TODO文案 [1h]
 ** node delete rpc 
+
+
+* Puppet Learning
+** Puppet agent two mode
+*** daemon
+*** run once and quit
+*** check it in background /etc/init.d/pe-puppet status
+*** turn it off /etc/init.d/pe-puppet stop
+** Trouble shooting
+*** vm can ping each other
+*** agent can resolve master by host name 
+*** client has a server setting
+*** sync clock 
+** Get One
+*** show cert list: puppet cert list
+*** puppet cert: puppet cert sign agent1.localdomain
