@@ -1,47 +1,15 @@
 Project Management
 ===============================================================================
-* Week work
-** Problems
-*** Foreman parameter problem(think about it)
-*** 自动生成DNS记录(think about it)
-*** 自动生成uuid(think about it)
-*** DHCP Problems(think about it)
-** Would like to do
-*** learning ruby on rails (20h).
-*** learning economics (20h). 
-*** write articles about triplo and razor(10h). 
-*** 10 patch (20h)
-
 * Ironic 中需要修改的地方
 ** driver/base.py 的TODO文案 [1h]
 ** node delete rpc 
-
-
-* Puppet Learning
-** Puppet agent two mode
-*** daemon
-*** run once and quit
-*** check it in background /etc/init.d/pe-puppet status
-*** turn it off /etc/init.d/pe-puppet stop
-** Trouble shooting
-*** vm can ping each other
-*** agent can resolve master by host name 
-*** client has a server setting
-*** sync clock 
-** Get One
-*** show cert list: puppet cert list
-*** puppet cert: puppet cert sign agent1.localdomain
-
 
 * How to add a default search engine in chrome
 ** find the bottom (add one)
 ** find them in second one
 ** key url http://www.google.co.uk/search?&q=%s
 ** make default
-
  
 Install
-* glance parameters problem (api) 
 * libvrit (qemu(virtual)), kvm(physical))
 * vnc host parameters 
-* nova reserve bash 

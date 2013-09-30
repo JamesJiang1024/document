@@ -25,4 +25,20 @@ DONE 主机Nameserver有问题，需要弄明白Dns。
 ** PXE
 *** IPXE
 **** Burn Into Rom http://www.ipxe.org/howto/romburning
-**** Boot From IPXE http://www.ipxe.org/howto/chainloading 
+
+** Puppet Learning
+** Puppet agent two mode
+*** daemon
+*** run once and quit
+*** check it in background /etc/init.d/pe-puppet status
+*** turn it off /etc/init.d/pe-puppet stop
+** Trouble shooting
+*** vm can ping each other
+*** agent can resolve master by host name 
+*** client has a server setting
+*** sync clock 
+** Get One
+*** show cert list: puppet cert list
+*** puppet cert: puppet cert sign agent1.localdomain
+
+*** Boot From IPXE http://www.ipxe.org/howto/chainloading 
