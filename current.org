@@ -10,6 +10,6 @@ Project Management
 ** key url http://www.google.co.uk/search?&q=%s
 ** make default
  
-Install
-* libvrit (qemu(virtual)), kvm(physical))
-* vnc host parameters 
+* Install
+** libvrit (qemu(virtual)), kvm(physical))
+** vnc host parameters 
