@@ -10,6 +10,17 @@ Project Management
 ** key url http://www.google.co.uk/search?&q=%s
 ** make default
  
-* Install
-** libvrit (qemu(virtual)), kvm(physical))
-** vnc host parameters 
+* Some arrange for tommorrow
+** prepare a iso and doc for denny
+** make a fedora env for tuskar env
+** before make tuskar env i can review all codes
+
+
+
+* install-dependence
+** python-lxml
+** 
+
+* bash skills
+
+for i in *; do echo $i; done
